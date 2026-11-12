@@ -1,1 +1,0 @@
-MDF nominal 3mm. Rasgos, da esquerda para a direita: 2,90 / 3,00 / 3,15 / 3,30 mm. Corte tambem a lingueta e teste a espessura da chapa nesses rasgos. As marcacoes estao apenas neste texto, para nao gravar linhas junto ao corte. Ajuste kerf/folga antes do robo completo.
