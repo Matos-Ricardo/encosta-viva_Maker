@@ -11,7 +11,7 @@
 | Julio Zampieri | 98772 |
 | João Dias | 99092 |
 
-- 🎥 **Vídeo demonstrativo:** [COLE AQUI O LINK DO VÍDEO NO YOUTUBE]
+- 🎥 **Vídeo demonstrativo:** (https://www.youtube.com/watch?v=MCsqGxadtGM)
 - 📋 **Ficha técnica do MVP:** [`docs/FICHA_TECNICA.md`](docs/FICHA_TECNICA.md)
 - 🧪 **Plano e evidências de testes:** [`docs/PLANO_DE_TESTES.md`](docs/PLANO_DE_TESTES.md)
 
