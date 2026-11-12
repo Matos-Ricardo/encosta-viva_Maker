@@ -13,7 +13,7 @@
 
 - 🎥 **Vídeo demonstrativo:** [Assistir no YouTube](https://www.youtube.com/watch?v=MCsqGxadtGM)
 - 📋 **Ficha técnica do MVP:** [`docs/FICHA_TECNICA.md`](docs/FICHA_TECNICA.md)
-- 🧪 **Plano e evidências de testes:** [`docs/PLANO_DE_TESTES.md`](docs/PLANO_DE_TESTES.md)
+- 🧪 **Plano de testes:** [`docs/PLANO_DE_TESTES.md`](docs/PLANO_DE_TESTES.md)
 
 > Sistema demonstrativo (maquete). Não substitui monitoramento geotécnico nem a Defesa Civil (199) e os Bombeiros (193).
 
@@ -83,9 +83,14 @@ Subir de nível é imediato; descer exige 8 s estáveis (histerese). Os limiares
 
 ## Hardware
 
-ESP32 DevKit V1 · MPU6050 · 3 LEDs com resistor de 220 Ω · buzzer ativo · estrutura de MDF 3 mm. (Os 2 servos SG90 previstos no modelo 3D não foram instalados nesta montagem.) Tabela de ligações e cuidados elétricos: [`hardware/LIGACOES.md`](hardware/LIGACOES.md). Montagem: [`docs/GUIA_MONTAGEM.md`](docs/GUIA_MONTAGEM.md). Modelo 3D, DXF e lista de peças: `hardware/fusion360/`.
+ESP32 DevKit V1 · MPU6050 · 3 LEDs com resistor de 220 Ω · buzzer ativo · estrutura de MDF 3 mm. (Os 2 servos SG90 previstos no modelo 3D não foram instalados nesta montagem.) Tabela de ligações e cuidados elétricos: [`hardware/LIGACOES.md`](hardware/LIGACOES.md). Montagem: [`docs/GUIA_MONTAGEM.md`](docs/GUIA_MONTAGEM.md). Em `hardware/fusion360/`: script que gera o modelo 3D dentro do Fusion 360, imagem da montagem, DXF das peças para corte a laser e lista das 50 peças.
 
-![Robô montado](hardware/fusion360/Robo_Modelo_02_original/MODELO_02_MONTADO.png)
+![Modelo 3D do robô no Fusion 360](hardware/fusion360/Robo_Modelo_02_original/MODELO_02_MONTADO.png)
+*Modelo 3D do robô no Fusion 360 (inclui os servos previstos, não instalados na montagem final).*
+
+<!-- Foto do robô físico: envie o arquivo para docs/img/robo_montado.jpg e remova as marcas de comentário desta linha.
+![Robô montado](docs/img/robo_montado.jpg)
+-->
 
 ## Alterações em relação ao modelo do Fusion 360
 
@@ -116,6 +121,7 @@ Abra `http://localhost:8000` (dashboard), `/docs` (Swagger) e `/saude` (API e MQ
 cd api
 python -m unittest discover -v     # 24 testes, sem MQTT e sem internet
 ```
+Resultado na última execução (12/11/2026): `Ran 24 tests ... OK`. O plano completo, com os testes no robô e os de falha, está em [`docs/PLANO_DE_TESTES.md`](docs/PLANO_DE_TESTES.md).
 
 ## Contrato MQTT
 
@@ -170,7 +176,6 @@ Tempo de antecedência entre o pré-alerta e o nível 3 · número de alertas po
 ```text
 api/        API FastAPI, IA, dashboard, testes, scripts de execução
 firmware/   Código do ESP32 (principal, testado) e versão experimental opcional
-hardware/   Ligações elétricas e modelo 3D (Fusion 360, DXF)
+hardware/   Ligações elétricas e arquivos do modelo (Fusion 360, DXF, lista de peças)
 docs/       Ficha técnica, plano de testes, guia de montagem, roteiro do vídeo
-.github/    Execução automática dos testes (GitHub Actions)
 ```
