@@ -177,5 +177,4 @@ api/        API FastAPI, IA, dashboard, testes, scripts de execução
 firmware/   Código do ESP32 (principal, testado) e versão experimental opcional
 hardware/   Ligações elétricas e arquivos do modelo (Fusion 360, DXF, lista de peças)
 docs/       Ficha técnica, plano de testes, guia de montagem, roteiro do vídeo
-.github/    Execução automática dos testes (GitHub Actions)
 ```
