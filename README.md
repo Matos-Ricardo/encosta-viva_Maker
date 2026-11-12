@@ -85,8 +85,6 @@ Subir de nível é imediato; descer exige 8 s estáveis (histerese). Os limiares
 
 ESP32 DevKit V1 · MPU6050 · 3 LEDs com resistor de 220 Ω · buzzer ativo · estrutura de MDF 3 mm. (Os 2 servos SG90 previstos no modelo 3D não foram instalados nesta montagem.) Tabela de ligações e cuidados elétricos: [`hardware/LIGACOES.md`](hardware/LIGACOES.md). Montagem: [`docs/GUIA_MONTAGEM.md`](docs/GUIA_MONTAGEM.md). Modelo 3D, DXF e lista de peças: `hardware/fusion360/`.
 
-[![Robô montado](hardware/fusion360/Robo_Modelo_02_original/MODELO_02_MONTADO.png)](https://www.youtube.com/watch?v=MCsqGxadtGM)
-
 ## Alterações em relação ao modelo do Fusion 360
 
 O modelo 3D prevê dois servos SG90 (peças `S_E_SUPORTE_SG90` e afins). **Na montagem física final eles não foram instalados**: o robô alerta apenas por LEDs e buzzer, que são os atuadores usados na demonstração. O firmware continua configurando os pinos dos servos (GPIO14 e GPIO13), mas sem servos ligados isso não tem efeito algum e não afeta o funcionamento.
